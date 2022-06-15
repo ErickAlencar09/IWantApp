@@ -23,7 +23,7 @@ namespace IWantApp.Endpoints.Categories
             context.Add(category);
             context.SaveChanges();
 
-            return Results.Created($"/categories/{category.Id}", category.Id);
+            return Results.Ok();
         }
     }
 }
